@@ -1,0 +1,30 @@
+.discography-item {
+  @include make-flex($direction: column);
+  @include add-gap($row-gap: 18px);
+  @include add-flexibility($basis: 250px);
+
+  @include for-phone {
+    @include add-flexibility($basis: 137px);
+  }
+
+  .discography-img {
+    @include make-box(250px, 250px);
+
+    @include for-phone {
+      @include make-box(137px, 137px);
+    }
+  }
+
+  .discography-info {
+    @include make-flex($direction: column);
+
+    .album {
+      @include typography($text-sizes, "default");
+      @include text-style("white", capitalize);
+    }
+    .year {
+      @include reset;
+      @include typography($text-sizes, "s1");
+    }
+  }
+}

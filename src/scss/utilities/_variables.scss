@@ -1,0 +1,72 @@
+/* Base style */
+$base-max-width-content: 1200px;
+$base-font-family: "Roboto", sans-serif;
+$base-font-size: 18px;
+$base-line-height: 1.5;
+$base-color: #cacaca;
+$base-background: #08020d;
+
+$rem-base: $base-font-size;
+
+/* Position */ 
+$positions: (
+  "top": (25px),
+  "bottom": (),
+  "right": (),
+  "left": ()
+);
+
+/* Typography */
+$heading-sizes: (
+  "desktop": (
+    "h1": (60px),
+    "h2": (38px),
+    "h3": (24px),
+    "h4": (18px)
+  ),
+  "mobile": (
+    "h1": (30px),
+    "h2": (18px),
+    "h3": (16px),
+    "h4": (18px)
+  )
+);
+
+/* Text-size */ 
+$text-sizes: (
+  "s7": (64px, 64px),
+  "s6": (56px),
+  "s5": (48px),
+  "s4": (40px),
+  "s3": (30px),
+  "s2": (24px),
+  "s1": (16px),
+  "small": (12.8px),
+  "default": ($base-font-size),
+);
+
+/* Background */ 
+$colors: (
+  "white": #FFFFFF,
+  "black": #08020D,
+  "gray": #E0E0E0,
+  "dark-gray": #CACACA,
+  "dark": #3C3B3D,
+  "green": #34C176,
+  "orange": #F89202,
+  "purple": #5328A1,
+  "dark-red": #95390C,
+  "transparent": transparent,
+);
+
+$gradients: (
+  "gradient-1": (map-get($colors, "dark-red") 14.9%, map-get($colors, "purple" ) 68.95%),
+);
+
+/* Breakpoints */ 
+$breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px
+);

@@ -1,0 +1,28 @@
+.popular-track {
+  @include make-flex;
+  @include add-gap($column-gap: 15px);
+  @include add-flexibility($grow: 1, $basis: 45%);
+
+  .track-info {
+    @include make-flex;
+    @include add-flexibility($grow: 1);
+    @include add-align-elements($align-items: center, $justify-content: space-between);
+
+    .author-info {
+      @include make-flex($direction: column);
+
+      .song {
+        @include typography($text-sizes, "small");
+        @include text-style($color: "white", $transform: uppercase);
+      }
+
+      .singer {
+        @include typography($text-sizes, "small");
+      }
+    }
+
+    .duration-info {
+      @include typography($text-sizes, "small");
+    }
+  }
+}

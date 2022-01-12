@@ -1,0 +1,44 @@
+.container-content {
+  max-width: $base-max-width-content;
+  @include add-margin(0, auto, 0, auto);
+
+  @include for-desktop {
+    @include add-padding($right: 20px, $left: 20px);
+  }
+}
+
+.flex-row-wrap {
+  @include make-flex($wrap: wrap);
+}
+
+.flex-column {
+  @include make-flex($direction: column);
+}
+
+.align-items-center {
+  @include add-align-elements($align-items: center);
+}
+
+.columns-2 > * {
+  @include add-flexibility($grow: 1, $basis: 45%);
+
+  @include for-phone {
+    @include add-flexibility($grow: 1, $basis: 100%);
+  }
+}
+
+.gap-50 {
+  @include add-gap(50px, 50px);
+}
+
+.gap-50-25 {
+  @include add-gap(50px, 25px);
+}
+
+.gap-col-50 {
+  @include add-gap($column-gap: 50px);
+}
+
+.gap-row-65 {
+  @include add-gap($row-gap: 65px);
+}

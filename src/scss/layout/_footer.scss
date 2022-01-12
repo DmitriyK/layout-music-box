@@ -1,0 +1,66 @@
+/* Navigaton footer */
+.nav-footer-1 {
+  @include make-flex($wrap: wrap);
+  @include add-gap(40px);
+  @include add-padding($top: $rem-base * 3, $bottom: $rem-base * 3);
+  
+  @include for-phone {
+    @include add-gap(40px, 30px);
+  }
+
+  .nav-box {
+    @include add-flexibility($grow: 1, $basis: 270px);
+
+    .title {
+      @include add-margin($bottom: 16px);
+      @include typography($text-sizes, "default");
+    }
+
+    .nav-area .nav-item,
+    .info-area .info-item {
+      @include reset;
+      @include typography($text-sizes, "s1");
+      @include text-style($color: "gray");
+    }
+
+    .icon-area {
+      @include make-flex;
+      @include add-gap(24px);
+      @include add-align-elements($align-items: center);
+
+      .icon-item {
+        @include make-flex;
+        @include add-align-elements($align-items: center);
+      }
+    }
+  }
+}
+
+.separation-line {
+  @include make-border($color: "dark-gray");
+
+  @include for-phone {
+    @include make-border($color: "gray");
+  }
+}
+
+.nav-footer-2 {
+  @include make-flex;
+  @include add-padding($top: $rem-base * 2, $bottom: $rem-base * 2);
+  @include add-flexibility($grow: 1);
+
+  .nav-area {
+    @include make-flex;
+    @include add-flexibility($grow: 1);
+    @include add-gap(16px, 16px);
+
+    @include for-phone {
+      @include make-flex($direction: column);
+    }
+
+    .nav-item {
+      @include typography($text-sizes, "s1");
+      @include text-style("gray");
+    }
+  }
+}

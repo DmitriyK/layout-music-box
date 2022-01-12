@@ -1,0 +1,206 @@
+@use "sass:math";
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin reset-list {
+  @include reset;
+  list-style: none;
+}
+
+@mixin display-none {
+  display: none;
+}
+
+@mixin border-none {
+  border: none;
+}
+
+@mixin text-decoration-none {
+  text-decoration: none;
+}
+
+@mixin outline-none {
+  outline: none;
+}
+
+@mixin full-width {
+  width: 100%;
+}
+
+/* Grid */
+@mixin make-block($value) {
+  display: $value;
+}
+
+@mixin add-position($position) {
+  position: $position;
+}
+
+
+@mixin make-box($width: false, $height: false) {
+  @if $width { width: convertToFlexUnit($width); }
+  @if $height { height: convertToFlexUnit($height); }
+}
+
+@mixin make-flex($display: flex, $direction: false, $wrap: false) {
+  display: $display;
+  @if $direction { flex-direction: $direction; }
+  @if $wrap { flex-wrap: $wrap; }
+}
+
+@mixin add-align-elements($justify-content: false, $align-content: false, $align-items: false) {
+  @if $justify-content { justify-content: $justify-content; }
+  @if $align-content { align-content: $align-content; }
+  @if $align-items { align-items: $align-items; }
+}
+
+@mixin add-flexibility($grow: 0, $shrink: 1, $basis: auto) {
+  flex-grow: $grow;
+  flex-shrink: $shrink;
+  flex-basis: convertToFlexUnit($basis);
+}
+
+@mixin add-gap($column-gap: false, $row-gap: false) {
+  @if $column-gap { column-gap: convertToFlexUnit($column-gap); }
+  @if $row-gap { row-gap: convertToFlexUnit($row-gap); }
+}
+
+@mixin add-order($order) {
+  order: $order;
+}
+
+@mixin make-grid-areas($template) {
+  display: grid;
+  grid-template-areas: $template;
+}
+
+@mixin add-grid-area($area: false) {
+  @if $area { grid-area: $area; }
+}
+
+@mixin add-padding($top: false, $right: false, $bottom: false, $left: false) {
+	@if $top { padding-top: convertToFlexUnit($top); }
+  @if $right { padding-right: convertToFlexUnit($right); }
+  @if $bottom { padding-bottom: convertToFlexUnit($bottom); }
+  @if $left { padding-left: convertToFlexUnit($left); }
+}
+
+@mixin add-margin($top: false, $right: false, $bottom: false, $left: false) {
+	@if $top { margin-top: convertToFlexUnit($top); }
+  @if $right { margin-right: convertToFlexUnit($right); }
+  @if $bottom { margin-bottom: convertToFlexUnit($bottom); }
+  @if $left { margin-left: convertToFlexUnit($left); }
+}
+
+/* Typography */
+@mixin font-face($font-family, $weight: normal, $style: normal) {
+  @font-face {
+      font-family: $font-family;
+      font-weight: $weight;
+      font-style: $style;
+      src: url("/src/assets/fonts/#{$font-family}.ttf");
+  }
+}
+
+@mixin font-size($size: $base-font-size, $height: $size * $base-line-height) {
+  font-size: convertToFlexUnit($size);
+  line-height: math.div($height, $size);
+} 
+
+@mixin typography($list, $size, $device: null) {
+  @if $device == null {
+    $value-size: map-get($list, $size);
+    @include font-size($value-size...);
+  } @else {
+    $value-size: map-get($list, $device, $size);
+    @include font-size($value-size...);
+  }
+}
+
+@mixin text-style($color: false, $transform: false, $weight: false) {
+  @if $color {
+    $value-color: map-get($colors, $color);
+    color: $value-color;
+  }
+  @if $weight { font-weight: $weight; }
+  @if $transform { text-transform: $transform; }
+}
+
+@mixin text-align($align: start) {
+  text-align: $align;
+}
+
+/* Border style */
+@mixin make-border(
+  $position: all,
+  $size: 1px,
+  $pattern: solid,
+  $color: "white") {
+  $value-color: map-get($colors, $color);
+  @if $position == all {
+    border: convertToFlexUnit($size) $pattern $value-color;
+  } @else {
+    border-#{$position}: convertToFlexUnit($size) $pattern $value-color;
+  }
+}
+
+@mixin add-border-radius($radius) {
+  border-radius: convertToFlexUnit($radius);
+}
+
+/* Media */
+@mixin for-phone {
+  @media screen and (max-width: map-get($breakpoints, "sm")) {
+    @content;
+  }
+}
+
+@mixin for-desktop {
+  @media screen and (max-width: map-get($breakpoints, "xl")) {
+    @content;
+  }
+}
+
+/* Background style */
+@mixin bg-color($color) {
+  $value-color: map-get($colors, $color);
+  background: $value-color;
+}
+
+@mixin bg-image($name-img) {
+  background-image: url("../assets/images/#{$name-img}.png");
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin bg-gradient($test, $gradient) {
+  $value-gradient: map-get($gradients, $gradient);
+  background: linear-gradient($test, $value-gradient);
+}
+
+@mixin bg-button($color) {
+  $value-bg: map-get($colors, $color);
+  background: $value-bg;
+  &:hover {
+    background: darken($value-bg,8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background: darken($value-bg,25%);
+  }
+  @content;
+}
+
+@mixin generate-atoms($list) {
+  @each $name, $value in $list {
+    @if $value != () {
+      .#{$name}-#{$value} {
+        #{$name}: convertToFlexUnit($value);
+      }
+    } 
+  }
+}
+

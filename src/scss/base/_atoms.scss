@@ -1,0 +1,52 @@
+/* Atoms */
+.absolute {
+  @include add-position(absolute);
+}
+
+.relative {
+  @include add-position(relative);
+}
+
+.t-25 {
+  top: 25px;
+}
+
+.hidden {
+  @include display-none;
+}
+
+.w-full {
+  @include full-width;
+}
+
+.s1 {
+  @include typography($text-sizes, "s1");
+}
+
+.white {
+  @include text-style("white");
+}
+
+.center {
+  @include text-align(center)
+}
+
+.uppercase {
+  @include text-style($transform: uppercase);
+}
+
+.bold {
+  @include text-style($weight: bold);
+}
+
+.capitalize {
+  @include text-style($transform: capitalize);
+}
+
+.bg-black {
+  @include bg-color("black");
+}
+
+.bg-gradient {
+  @include bg-gradient(0.75turn, "gradient-1");
+}

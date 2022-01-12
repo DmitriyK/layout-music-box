@@ -1,0 +1,42 @@
+/* Fonts */
+@include font-face("/src/assets/fonts/", "Roboto");
+@include font-face("/src/assets/fonts/", "Roboto-Bold", bold);
+
+h1,
+h2 {
+  @include text-style($transform: uppercase);
+}
+
+h1 {
+  @include typography($heading-sizes, "h1", "desktop");
+
+  @include for-phone {
+    @include typography($heading-sizes, "h1", "mobile");
+  }
+}
+
+h2 {
+  @include typography($heading-sizes, "h2", "desktop");
+
+  @include for-phone {
+    @include typography($heading-sizes, "h2", "mobile");
+  }
+}
+
+h3 {
+  @include typography($heading-sizes, "h3", "desktop");
+
+  @include for-phone {
+    @include typography($heading-sizes, "h3", "mobile");
+  }
+}
+
+h4 {
+  @include typography($heading-sizes, "h4", "desktop");
+
+  @include for-phone {
+    @include typography($heading-sizes, "h4", "mobile");
+  }
+}
+
+

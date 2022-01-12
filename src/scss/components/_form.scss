@@ -1,0 +1,58 @@
+/* Header Form */ 
+.form-search {
+  @include make-flex;
+  @include add-margin($left: auto);
+  @include make-box($width: 248px);
+
+  @include for-phone {
+    @include full-width;
+    @include add-margin($left: 0);
+  }
+
+  .form-group {
+    @include make-flex;
+    @include add-flexibility($grow: 1);
+
+    input {
+      @include add-flexibility($grow: 1);
+      @include add-padding(5px, 10px, 5px, 10px);
+
+      @include border-none;
+      @include add-border-radius(50px);
+      @include bg-color("dark");
+    }
+  }
+}
+
+/* Main Form */ 
+.form-subscribe {
+  @include make-flex($wrap: wrap);
+  @include add-gap(24px, 24px);
+  @include add-margin(0, auto, 0, auto);
+
+  max-width: convertToFlexUnit(570px);
+  
+  .form-group {
+    @include make-flex;
+    @include add-flexibility($grow: 1, $basis: 270px);
+
+    input {
+      @include add-flexibility($grow: 1);
+      min-height: convertToFlexUnit(50px);
+      @include add-padding($left: 20px);
+  
+      &::placeholder {
+        @include text-style($color: "white");
+      }
+
+      @include make-border($size: 2px, $color: "dark-gray");
+      @include add-border-radius(3px);
+      @include bg-color("transparent");
+    }
+  }
+}
+
+.form-to-album {
+  @include make-flex($wrap: wrap);
+  @include add-gap(24px, 24px);
+}

@@ -1,0 +1,75 @@
+/* Template */ 
+.btn {
+  @include make-block(inline-block);
+  @include add-padding(20px, 30px, 20px, 30px);
+
+  @include border-none;
+  @include add-border-radius(5px);
+}
+
+/* Buttons */
+.btn-access {
+  @include make-box(100%);
+}
+
+.btn-pricing {
+  @include make-box(100%);
+  @include make-border($color: "white");
+  @include typography($text-sizes, "s1");
+}
+
+.btn-to-album {
+  @include add-padding($top: 16px, $bottom: 16px);
+  @include make-border($color: "dark-gray");
+  @include typography($text-sizes, "small");
+
+  @include text-style($color: "dark-gray", $transform: uppercase);
+}
+
+.btn-download {
+  @include add-padding(16px, 40px, 16px, 40px);
+  @include add-border-radius(32px);
+  @include typography($text-sizes, "small");
+}
+
+.btn-to-mix {
+  @include make-flex;
+  @include add-gap(16px);
+  @include make-box($width: 200px);
+
+  @include typography($text-sizes, "small");
+  @include text-style($color: "white", $transform: uppercase);
+
+  .svg-icon {
+    @include make-box(20px, 20px);
+  }
+  
+}
+
+.btn-to-favorites {
+  @include make-flex;
+  @include add-gap(16px);
+  @include make-box($width: 200px);
+
+  @include typography($text-sizes, "small");
+  @include text-style($color: "white", $transform: uppercase);
+
+  .svg-icon {
+    @include make-box(20px, 20px);
+  }
+}
+
+/* Style */
+.bg-green {
+  @include bg-button("green");
+}
+
+.bg-purple {
+  @include bg-button("purple");
+}
+
+.bg-dark-red {
+  @include bg-button("dark-red");
+}
+
+

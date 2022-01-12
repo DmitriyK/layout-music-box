@@ -1,0 +1,47 @@
+/* Header */
+.header {
+  @include make-box($width: 100%);
+}
+/* Navigaton header */
+.nav-header {
+  @include make-flex;
+  @include add-align-elements($align-items: center);
+  @include font-size(11px);
+
+  @include for-phone {
+    @include make-flex($direction: column);
+    @include add-align-elements($align-items: baseline);
+  }
+
+  .logo-area {
+    @include make-flex;
+    @include add-align-elements($align-items: center);
+  
+    .logo-title {
+      @include add-margin($left: 16px);
+      @include text-style($color: "white", $transform: uppercase);
+    }
+  }
+
+  .menu-area {
+    @include make-flex;
+    @include add-gap(24px);
+    @include add-margin($left: 90px);
+
+    @include for-phone {
+      @include make-flex($direction: column);
+      @include add-gap(0);
+      @include add-margin($top: 16px, $left: 0, $bottom: 16px);
+    }
+
+    .menu-item {
+      @include text-style($color: "dark-gray", $transform: uppercase);
+
+      &.active,
+      &:hover {
+        @include text-style("white");
+      }
+    }
+  }
+}
+  
