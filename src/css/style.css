@@ -172,8 +172,9 @@ h4 {
   margin-bottom: 0;
   margin-left: auto;
 }
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1239px) {
   .container-content {
+    width: 100%;
     padding-right: 1.1111111111rem;
     padding-left: 1.1111111111rem;
   }
