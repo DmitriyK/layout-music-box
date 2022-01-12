@@ -280,7 +280,7 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   column-gap: 2.2222222222rem;
-  padding-top: 2.5rem;
+  padding-top: 3.4444444444rem;
   padding-bottom: 4rem;
 }
 @media screen and (max-width: 576px) {
@@ -794,6 +794,11 @@ h4 {
   padding-top: 11.1111111111rem;
   padding-bottom: 11.1111111111rem;
 }
+@media screen and (max-width: 576px) {
+  .banner-section {
+    padding-top: 13.8888888889rem;
+  }
+}
 .banner-section .title-2 {
   margin-bottom: 1.7777777778rem;
 }
@@ -828,7 +833,7 @@ h4 {
   margin-bottom: 5.5555555556rem;
 }
 .app-section .title {
-  margin-bottom: 2.7777777778rem;
+  margin-bottom: 2.6666666667rem;
 }
 .app-section .app-description {
   order: 1;
