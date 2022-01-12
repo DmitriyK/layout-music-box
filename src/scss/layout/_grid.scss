@@ -1,11 +1,7 @@
 .container-content {
   max-width: $base-max-width-content;
   @include add-margin(0, auto, 0, auto);
-
-  @include for-desktop {
-    width: 100%;
-    @include add-padding($right: 20px, $left: 20px);
-  }
+  @include add-padding($right: 20px, $left: 20px);
 }
 
 .flex-row-wrap {
