@@ -10,7 +10,7 @@
     }
 
     .description {
-      @include add-margin($bottom: 50px);
+      @include add-margin($bottom: 48px);
     }
 }
 
@@ -18,7 +18,7 @@
   @include add-padding($top: 100px);
 
   .title {
-    @include add-margin($bottom: 50px);
+    @include add-margin($bottom: 48px);
   }
 }
 

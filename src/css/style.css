@@ -731,7 +731,7 @@ h4 {
   flex-direction: column;
 }
 .discography-item .discography-info .album {
-  font-size: 1rem;
+  font-size: 0.8888888889rem;
   line-height: 1.5;
   color: #FFFFFF;
   text-transform: capitalize;
@@ -862,14 +862,14 @@ h4 {
   }
 }
 .main-section .description {
-  margin-bottom: 2.7777777778rem;
+  margin-bottom: 2.6666666667rem;
 }
 
 .popular-track-section {
   padding-top: 5.5555555556rem;
 }
 .popular-track-section .title {
-  margin-bottom: 2.7777777778rem;
+  margin-bottom: 2.6666666667rem;
 }
 
 .discography-section {
