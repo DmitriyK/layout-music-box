@@ -2,17 +2,17 @@
 .nav-footer-1 {
   @include make-flex($wrap: wrap);
   @include add-gap(40px);
-  @include add-padding($top: $rem-base * 3, $bottom: $rem-base * 3);
+  @include add-padding($top: 45px, $bottom: 72px);
   
   @include for-phone {
-    @include add-gap(40px, 30px);
+    @include add-gap(40px, 31px);
   }
 
   .nav-box {
     @include add-flexibility($grow: 1, $basis: 270px);
 
     .title {
-      @include add-margin($bottom: 16px);
+      @include add-margin($bottom: 15px);
       @include typography($text-sizes, "default");
     }
 
@@ -46,7 +46,7 @@
 
 .nav-footer-2 {
   @include make-flex;
-  @include add-padding($top: $rem-base * 2, $bottom: $rem-base * 2);
+  @include add-padding($top: 40px, $bottom: 48px);
   @include add-flexibility($grow: 1);
 
   .nav-area {

@@ -26,6 +26,7 @@
     }
     .fans {
       @include make-flex($direction: column);
+      @include reset;
       @include typography($text-sizes, "s1");
       @include text-style($color: "gray");
     }
