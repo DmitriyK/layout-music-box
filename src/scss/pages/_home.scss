@@ -2,8 +2,10 @@
 .banner-section {
   @include add-padding($top: 200px, $bottom: 200px);
 
-  @include for-phone {
-    @include add-padding($top: 250px);
+  .title-1 {
+    @include for-phone {
+      @include add-padding($top: 50px);
+    }
   }
 
   .title-2 {

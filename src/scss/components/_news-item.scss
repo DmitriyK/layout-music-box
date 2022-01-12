@@ -35,6 +35,8 @@
 
       @include for-phone {
         @include typography($text-sizes, "s1");
+
+        @include add-margin($bottom: 0);
       }
     }
 

@@ -641,6 +641,7 @@ h4 {
   .news-item .news-body .news-title {
     font-size: 0.8888888889rem;
     line-height: 1.5;
+    margin-bottom: 0;
   }
 }
 .news-item .news-body .news-description {
@@ -795,8 +796,8 @@ h4 {
   padding-bottom: 11.1111111111rem;
 }
 @media screen and (max-width: 576px) {
-  .banner-section {
-    padding-top: 13.8888888889rem;
+  .banner-section .title-1 {
+    padding-top: 2.7777777778rem;
   }
 }
 .banner-section .title-2 {
