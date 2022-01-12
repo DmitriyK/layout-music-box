@@ -84,6 +84,7 @@ ul {
 }
 
 a {
+  display: block;
   text-decoration: none;
 }
 
@@ -728,7 +729,7 @@ h4 {
   flex-direction: column;
 }
 .discography-item .discography-info .album {
-  font-size: 0.8888888889rem;
+  font-size: 1rem;
   line-height: 1.5;
   color: #FFFFFF;
   text-transform: capitalize;

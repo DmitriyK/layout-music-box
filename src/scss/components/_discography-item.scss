@@ -19,7 +19,7 @@
     @include make-flex($direction: column);
 
     .album {
-      @include typography($text-sizes, "s1");
+      @include typography($text-sizes, "default");
       @include text-style("white", capitalize);
     }
     .year {
