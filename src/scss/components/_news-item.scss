@@ -1,19 +1,18 @@
 .news-item {
   @include make-grid-areas("img img img body"
-                           "img img img body"
                            "img img img footer");
   @include for-phone {
     @include make-grid-areas("img" "body" "footer");
   }
   &.reverse {
     @include make-grid-areas("body img img img"
-                             "body img img img"
                              "footer img img img");
     @include for-phone {
       @include make-grid-areas("img" "body" "footer");
     }
   }
   @include add-gap(50px);
+  // grid-auto-flow: row dense;
 
   .news-img {
     @include make-flex;
@@ -35,6 +34,9 @@
         @include add-margin($bottom: 0);
         @include typography($text-sizes, "default");
       }
+    }
+    .news-description {
+      @include add-margin($bottom: 24px);
     }
   }
 

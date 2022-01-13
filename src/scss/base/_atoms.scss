@@ -63,6 +63,18 @@
   }
 }
 
+.mt-25-sm {
+  @include for-phone {
+    margin-top: 25px;
+  }
+}
+
+.mt-50-sm {
+  @include for-phone {
+    margin-top: 50px;
+  }
+}
+
 .mt-50-xl {
   @include for-desktop {
     margin-top: 50px;

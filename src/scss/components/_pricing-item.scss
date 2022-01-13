@@ -1,6 +1,6 @@
 .pricing-item {
   @include add-flexibility($grow: 1, $basis: 30%);
-  @include add-padding($rem-base * 1.5, $rem-base * 1.5, $rem-base * 1.5, $rem-base * 1.5);
+  @include add-padding($left: $rem-base * 1.5, $right: $rem-base * 1.5);
   @include add-border-radius($rem-base);
 
   @include for-phone {
@@ -8,7 +8,11 @@
   }
 
   .item-title {
-    @include add-margin($bottom: 200px);
+    @include add-margin($top: 24px, $bottom: 200px);
+
+    @include for-phone {
+      @include add-margin($top: 16px);
+    }
   }
   
   .item-value {
@@ -28,7 +32,7 @@
   }
   
   .item-description {
-    @include add-margin($top: 64px, $bottom: 104px);
+    @include add-margin($top: 64px, $bottom: 64px);
     @include typography($text-sizes, "small");
   }
 }
