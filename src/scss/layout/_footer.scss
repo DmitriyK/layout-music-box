@@ -2,7 +2,7 @@
 .nav-footer-1 {
   @include make-flex($wrap: wrap);
   @include add-gap(40px, 30px);
-  @include add-padding($top: 63px, $bottom: 63px);
+  @include add-padding($top: 62px, $bottom: 72px);
 
   .nav-box {
     @include add-flexibility($grow: 1, $basis: 270px);
@@ -11,14 +11,11 @@
       @include add-margin($bottom: 15px);
       @include typography($text-sizes, "s1");
     }
-    .nav-area > * {
-      line-height: 1.5;
-    }
 
     .icon-area {
       @include make-flex;
       @include add-gap(24px);
-      @include add-align-elements($align-items: center);
+      @include add-align-elements($align-items: baseline);
 
       .icon-item {
         @include make-flex;
@@ -44,6 +41,7 @@
 
     .nav-item {
       @include typography($text-sizes, "s1");
+      line-height: 1;
     }
   }
 }

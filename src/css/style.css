@@ -688,7 +688,7 @@ h4 {
   display: flex;
   align-items: center;
   font-size: 0.6875rem;
-  line-height: 1.1718181818;
+  line-height: 1.5;
 }
 @media screen and (max-width: 576px) {
   .nav-header {
@@ -715,7 +715,6 @@ h4 {
   .nav-header .menu-area {
     display: flex;
     flex-direction: column;
-    row-gap: 0.1875rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 0;
@@ -735,8 +734,8 @@ h4 {
   flex-wrap: wrap;
   column-gap: 2.5rem;
   row-gap: 1.875rem;
-  padding-top: 3.9375rem;
-  padding-bottom: 3.9375rem;
+  padding-top: 3.875rem;
+  padding-bottom: 4.5rem;
 }
 .nav-footer-1 .nav-box {
   flex-grow: 1;
@@ -748,13 +747,10 @@ h4 {
   font-size: 1.125rem;
   line-height: 1.5;
 }
-.nav-footer-1 .nav-box .nav-area > * {
-  line-height: 1.5;
-}
 .nav-footer-1 .nav-box .icon-area {
   display: flex;
   column-gap: 1.5rem;
-  align-items: center;
+  align-items: baseline;
 }
 .nav-footer-1 .nav-box .icon-area .icon-item {
   display: flex;
@@ -786,6 +782,7 @@ h4 {
 .nav-footer-2 .nav-area .nav-item {
   font-size: 1.125rem;
   line-height: 1.5;
+  line-height: 1;
 }
 
 /* Styles */
