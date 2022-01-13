@@ -30,7 +30,7 @@
 
 .nav-footer-2 {
   @include make-flex;
-  @include add-padding($top: $rem-base * 2, $bottom: $rem-base * 2);
+  @include add-padding($top: 40px, $bottom: 48px);
   @include add-flexibility($grow: 1);
 
   .nav-area {

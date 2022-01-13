@@ -184,23 +184,16 @@
 @mixin bg-button($color) {
   $value-bg: map-get($colors, $color);
   background: $value-bg;
-  &:hover {
-    background: darken($value-bg,8%);
-    transition: all 0.3s ease;
-  }
-  &:active {
-    background: darken($value-bg,25%);
-  }
   @content;
 }
 
-@mixin generate-atoms($list) {
-  @each $name, $value in $list {
-    @if $value != () {
-      .#{$name}-#{$value} {
-        #{$name}: convertToFlexUnit($value);
-      }
-    } 
-  }
-}
+// @mixin generate-atoms($list) {
+//   @each $name, $value in $list {
+//     @if $value != () {
+//       .#{$name}-#{$value} {
+//         #{$name}: convertToFlexUnit($value);
+//       }
+//     } 
+//   }
+// }
 

@@ -148,61 +148,61 @@ h4 {
 }
 
 .pt-100 {
-  padding-top: 100px;
+  padding-top: 6.25rem;
 }
 
 .pt-200 {
-  padding-top: 200px;
+  padding-top: 12.5rem;
 }
 
 .pb-200 {
-  padding-bottom: 200px;
+  padding-bottom: 12.5rem;
 }
 
 .mb-45 {
-  margin-bottom: 45px;
+  margin-bottom: 2.8125rem;
 }
 
 .mb-48 {
-  margin-bottom: 48px;
+  margin-bottom: 3rem;
 }
 
 .mt-40 {
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 @media screen and (max-width: 576px) {
   .mt-25-sm {
-    margin-top: 25px;
+    margin-top: 1.5625rem;
   }
 }
 
 @media screen and (max-width: 576px) {
   .mt-25-sm {
-    margin-top: 25px;
+    margin-top: 1.5625rem;
   }
 }
 
 @media screen and (max-width: 576px) {
   .mt-50-sm {
-    margin-top: 50px;
+    margin-top: 3.125rem;
   }
 }
 
 @media screen and (min-width: 992px) {
   .mt-50-xl {
-    margin-top: 50px;
+    margin-top: 3.125rem;
   }
 }
 
 @media screen and (min-width: 992px) {
   .mb-32-xl {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
   }
 }
 
 .mb-100 {
-  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
 }
 
 .white {
@@ -375,34 +375,13 @@ h4 {
 .bg-green {
   background: #34C176;
 }
-.bg-green:hover {
-  background: #2ba162;
-  transition: all 0.3s ease;
-}
-.bg-green:active {
-  background: #195d39;
-}
 
 .bg-purple {
   background: #5328A1;
 }
-.bg-purple:hover {
-  background: #422080;
-  transition: all 0.3s ease;
-}
-.bg-purple:active {
-  background: #1e0f3b;
-}
 
 .bg-dark-red {
   background: #95390C;
-}
-.bg-dark-red:hover {
-  background: #6f2b09;
-  transition: all 0.3s ease;
-}
-.bg-dark-red:active {
-  background: #1f0c02;
 }
 
 /* Header Form */
@@ -785,8 +764,8 @@ h4 {
 
 .nav-footer-2 {
   display: flex;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: auto;

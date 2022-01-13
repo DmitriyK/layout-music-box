@@ -20,75 +20,75 @@
 }
 
 .order-1 {
-  order: 1;
+  @include add-order(1);
 }
 
 .order-2 {
-  order: 2;
+  @include add-order(2);
 }
 
 .order-0-sm {
   @include for-phone {
-    order:0
+    @include add-order(0);
   }
 }
 
 .pt-100 {
-  padding-top: 100px;
+  @include add-padding($top: 100px);
 }
 
 .pt-200 {
-  padding-top: 200px;
+  @include add-padding($top: 200px);
 }
 
 .pb-200 {
-  padding-bottom: 200px;
+  @include add-padding($bottom: 200px);
 }
 
 .mb-45 {
-  margin-bottom: 45px;
+  @include add-margin($bottom: 45px);
 }
 
 .mb-48 {
-  margin-bottom: 48px;
+  @include add-margin($bottom: 48px);
 }
 
 .mt-40 {
-  margin-top: 40px;
+  @include add-margin($top: 40px);
 }
 
 .mt-25-sm {
   @include for-phone {
-    margin-top: 25px;
+    @include add-margin($top: 25px);
   }
 }
 
 .mt-25-sm {
   @include for-phone {
-    margin-top: 25px;
+    @include add-margin($top: 25px);
   }
 }
 
 .mt-50-sm {
   @include for-phone {
-    margin-top: 50px;
+    @include add-margin($top: 50px);
   }
 }
 
 .mt-50-xl {
   @include for-desktop {
-    margin-top: 50px;
+    @include add-margin($top: 50px);
   }
 }
 
 .mb-32-xl {
   @include for-desktop {
-    margin-bottom: 32px;
+    @include add-margin($bottom: 32px);
   }
 }
 
 .mb-100 {
-  margin-bottom: 100px;
+  @include add-margin($bottom: 100px);
 }
 
 .white {
