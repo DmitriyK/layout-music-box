@@ -1,6 +1,6 @@
 .pricing-item {
   @include add-flexibility($grow: 1, $basis: 30%);
-  @include add-padding($left: $rem-base * 1.5, $right: $rem-base * 1.5);
+  @include add-padding($left: 24px, $right: 24px);
   @include add-border-radius($rem-base);
 
   .item-title {

@@ -15,7 +15,6 @@
 .btn-pricing {
   @include make-box(100%);
   @include make-border($color: "white");
-  @include typography($text-sizes, "s1");
 }
 
 .btn-to-album {
@@ -23,7 +22,7 @@
   @include make-border($color: "dark-gray");
   @include typography($text-sizes, "small");
 
-  @include text-style($color: "dark-gray", $transform: uppercase);
+  // @include text-style($color: "dark-gray", $transform: uppercase);
 }
 
 .btn-download {
@@ -38,7 +37,6 @@
   @include make-box($width: 200px);
 
   @include typography($text-sizes, "small");
-  @include text-style($color: "white", $transform: uppercase);
 
   .svg-icon {
     @include make-box(20px, 20px);
@@ -46,13 +44,12 @@
   
 }
 
-.btn-to-favorites {
+.btn-to-favorite {
   @include make-flex;
   @include add-gap(16px);
   @include make-box($width: 200px);
 
   @include typography($text-sizes, "small");
-  @include text-style($color: "white", $transform: uppercase);
 
   .svg-icon {
     @include make-box(20px, 20px);

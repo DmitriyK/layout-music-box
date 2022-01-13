@@ -236,6 +236,10 @@ h4 {
   color: #F89202;
 }
 
+.text-dark-gray {
+  color: #CACACA;
+}
+
 .bg-black {
   background: #08020D;
 }
@@ -318,8 +322,6 @@ h4 {
 .btn-pricing {
   width: 100%;
   border: 0.0625rem solid #FFFFFF;
-  font-size: 1.125rem;
-  line-height: 1.5;
 }
 
 .btn-to-album {
@@ -328,8 +330,6 @@ h4 {
   border: 0.0625rem solid #CACACA;
   font-size: 0.8rem;
   line-height: 1.5;
-  color: #CACACA;
-  text-transform: uppercase;
 }
 
 .btn-download {
@@ -348,24 +348,20 @@ h4 {
   width: 12.5rem;
   font-size: 0.8rem;
   line-height: 1.5;
-  color: #FFFFFF;
-  text-transform: uppercase;
 }
 .btn-to-mix .svg-icon {
   width: 1.25rem;
   height: 1.25rem;
 }
 
-.btn-to-favorites {
+.btn-to-favorite {
   display: flex;
   column-gap: 1rem;
   width: 12.5rem;
   font-size: 0.8rem;
   line-height: 1.5;
-  color: #FFFFFF;
-  text-transform: uppercase;
 }
-.btn-to-favorites .svg-icon {
+.btn-to-favorite .svg-icon {
   width: 1.25rem;
   height: 1.25rem;
 }
@@ -727,7 +723,7 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   column-gap: 2.5rem;
-  row-gap: 1.875rem;
+  row-gap: 1.9375rem;
   padding-top: 3.875rem;
   padding-bottom: 4.5rem;
 }

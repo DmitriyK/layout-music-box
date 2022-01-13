@@ -1,7 +1,7 @@
 /* Navigaton footer */
 .nav-footer-1 {
   @include make-flex($wrap: wrap);
-  @include add-gap(40px, 30px);
+  @include add-gap(40px, 31px);
   @include add-padding($top: 62px, $bottom: 72px);
 
   .nav-box {

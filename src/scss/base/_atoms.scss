@@ -125,6 +125,10 @@
   color: map-get($colors, "orange");
 }
 
+.text-dark-gray {
+  color: map-get($colors, "dark-gray")
+}
+
 .bg-black {
   @include bg-color("black");
 }
