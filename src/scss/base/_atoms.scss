@@ -7,7 +7,7 @@
   @include add-position(relative);
 }
 
-.t-25 {
+.top-25 {
   top: 25px;
 }
 
@@ -19,20 +19,74 @@
   @include full-width;
 }
 
-.s1 {
-  @include typography($text-sizes, "s1");
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-0-sm {
+  @include for-phone {
+    order:0
+  }
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pt-200 {
+  padding-top: 200px;
+}
+
+.pb-200 {
+  padding-bottom: 200px;
+}
+
+.mb-45 {
+  margin-bottom: 45px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-25-sm {
+  @include for-phone {
+    margin-top: 25px;
+  }
+}
+
+.mt-50-sm {
+  @include for-phone {
+    margin-top: 50px;
+  }
+}
+
+.mb-100 {
+  margin-bottom: 100px;
 }
 
 .white {
   @include text-style("white");
 }
 
-.center {
+.text-center {
   @include text-align(center)
 }
 
 .uppercase {
   @include text-style($transform: uppercase);
+}
+
+.normal {
+  @include text-style($weight: normal);
 }
 
 .bold {
@@ -41,6 +95,16 @@
 
 .capitalize {
   @include text-style($transform: capitalize);
+}
+
+
+
+.text-white {
+  color: map-get($colors, "white");
+}
+
+.text-orange {
+  color: map-get($colors, "orange");
 }
 
 .bg-black {

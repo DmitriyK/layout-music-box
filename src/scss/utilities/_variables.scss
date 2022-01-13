@@ -1,7 +1,7 @@
 /* Base style */
 $base-max-width-content: 1240px;
 $base-font-family: "Roboto", sans-serif;
-$base-font-size: 18px;
+$base-font-size: 16px;
 $base-line-height: 1.5;
 $base-color: #cacaca;
 $base-background: #08020d;
@@ -40,9 +40,8 @@ $text-sizes: (
   "s4": (40px),
   "s3": (30px),
   "s2": (24px),
-  "s1": (16px),
+  "s1": (18px),
   "small": (12.8px),
-  "default": ($base-font-size),
 );
 
 /* Background */ 

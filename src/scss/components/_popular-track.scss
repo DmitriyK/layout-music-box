@@ -1,7 +1,11 @@
 .popular-track {
   @include make-flex;
   @include add-gap($column-gap: 15px);
-  @include add-flexibility($grow: 1, $basis: 45%);
+  @include add-flexibility($basis: 545px);
+
+  .track-img {
+    @include make-box(55px, 55px);
+  }
 
   .track-info {
     @include make-flex;
@@ -10,10 +14,9 @@
 
     .author-info {
       @include make-flex($direction: column);
-
+      
       .song {
         @include typography($text-sizes, "small");
-        @include text-style($color: "white", $transform: uppercase);
       }
 
       .singer {

@@ -1,18 +1,14 @@
 .pricing-item {
   @include add-flexibility($grow: 1, $basis: 30%);
-  @include add-padding($right: $rem-base * 1.5, $left: $rem-base * 1.5);
-  @include add-border-radius(18px);
-  @include text-style($color: "white");
-  @include text-align(center);
-  
+  @include add-padding($rem-base * 1.5, $rem-base * 1.5, $rem-base * 1.5, $rem-base * 1.5);
+  @include add-border-radius($rem-base);
+
+  @include for-phone {
+    @include add-padding($top: $rem-base, $bottom: $rem-base);
+  }
+
   .item-title {
-    @include add-margin($top: 25px, $bottom: 200px);
-
-    @include text-style($transform: uppercase, $weight: normal);
-
-    @include for-phone {
-      @include add-margin($top: 16px);
-    }
+    @include add-margin($bottom: 200px);
   }
   
   .item-value {
@@ -27,20 +23,15 @@
 
     .value-currency {
       @include typography($text-sizes, "s3");
-      @include text-style($transform: uppercase);
     }
   }
   
   .item-description {
     @include add-margin($top: 64px, $bottom: 64px);
-
     @include typography($text-sizes, "small");
-
-    @include for-phone {
-      @include add-margin($bottom: 87px);
-    }
   }
 }
+
 /* Background styles component */
 .bg-free {
   @include bg-image("subscribe_1");

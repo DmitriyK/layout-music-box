@@ -2,10 +2,8 @@
   @include make-flex($direction: column);
   @include add-gap($row-gap: 17px);
   @include add-flexibility($basis: 250px);
-  @include text-align($align: center);
 
   @include for-phone {
-
     @include add-flexibility($basis: 137px);
   }
 
@@ -21,14 +19,7 @@
     @include make-flex($direction: column);
 
     .singer {
-      @include typography($text-sizes, "default");
-      @include text-style("white", capitalize);
-    }
-    .fans {
-      @include make-flex($direction: column);
-      @include reset;
       @include typography($text-sizes, "s1");
-      @include text-style($color: "gray");
     }
   }
 }

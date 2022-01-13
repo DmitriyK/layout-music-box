@@ -30,12 +30,9 @@
     .news-title {
       @include add-margin($bottom: 30px);
       @include typography($text-sizes, "s3");
-      @include text-style("white", capitalize, normal);
-
 
       @include for-phone {
         @include typography($text-sizes, "s1");
-
         @include add-margin($bottom: 0);
       }
     }
@@ -53,15 +50,7 @@
       @include add-align-elements($align-items: center);
       @include add-gap(16px);
       @include add-margin($bottom: 48px);
-      @include text-style($transform: uppercase);
-
-      @include for-phone {
-        @include typography($text-sizes, "small");
-      }
-
-      .logo-title {
-        @include text-style("orange");
-      }
+      @include typography($text-sizes, "small");
     }
   }
 }
