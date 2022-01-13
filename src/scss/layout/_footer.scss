@@ -2,7 +2,7 @@
 .nav-footer-1 {
   @include make-flex($wrap: wrap);
   @include add-gap(40px, 30px);
-  @include add-padding($top: $rem-base * 3, $bottom: $rem-base * 3);
+  @include add-padding($top: 63px, $bottom: 63px);
 
   .nav-box {
     @include add-flexibility($grow: 1, $basis: 270px);
@@ -11,7 +11,10 @@
       @include add-margin($bottom: 15px);
       @include typography($text-sizes, "s1");
     }
-    
+    .nav-area > * {
+      line-height: 1.5;
+    }
+
     .icon-area {
       @include make-flex;
       @include add-gap(24px);

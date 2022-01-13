@@ -3,7 +3,7 @@
 .nav-header {
   @include make-flex;
   @include add-align-elements($align-items: center);
-  @include font-size(11px, 13px);
+  @include font-size(11px, 12.89px);
 
   @include for-phone {
     @include make-flex($direction: column);
@@ -22,12 +22,12 @@
 
   .menu-area {
     @include make-flex;
-    @include add-gap(24px);
+    @include add-gap($column-gap: 24px);
     @include add-margin($left: 90px);
 
     @include for-phone {
       @include make-flex($direction: column);
-      @include add-gap(0);
+      @include add-gap($row-gap: 3px);
       @include add-margin($top: 16px, $left: 0, $bottom: 16px);
     }
 
