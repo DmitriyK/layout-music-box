@@ -15,6 +15,7 @@
     @include make-flex;
     @include add-gap($column-gap: 16px);
     @include add-align-elements($justify-content: center);
+    @include reset;
     @include add-margin($bottom: 40px);
 
     .value-cost {
@@ -27,7 +28,7 @@
   }
   
   .item-description {
-    @include add-margin($top: 64px, $bottom: 64px);
+    @include add-margin($top: 64px, $bottom: 104px);
     @include typography($text-sizes, "small");
   }
 }

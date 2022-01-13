@@ -63,8 +63,10 @@
   }
 }
 
-.mt-50 {
-  margin-top: 50px;
+.mt-50-xl {
+  @include for-desktop {
+    margin-top: 50px;
+  }
 }
 
 .mb-32-xl {

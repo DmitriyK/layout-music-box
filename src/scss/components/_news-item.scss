@@ -32,13 +32,9 @@
       @include typography($text-sizes, "s3");
 
       @include for-phone {
-        @include typography($text-sizes, "s1");
         @include add-margin($bottom: 0);
+        @include typography($text-sizes, "default");
       }
-    }
-
-    .news-description {
-      @include typography($text-sizes, "s1");
     }
   }
 
