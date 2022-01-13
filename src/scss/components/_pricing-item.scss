@@ -3,10 +3,6 @@
   @include add-padding($left: $rem-base * 1.5, $right: $rem-base * 1.5);
   @include add-border-radius($rem-base);
 
-  @include for-phone {
-    @include add-padding($top: $rem-base, $bottom: $rem-base);
-  }
-
   .item-title {
     @include add-margin($top: 24px, $bottom: 200px);
 

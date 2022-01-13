@@ -12,6 +12,10 @@
       @include typography($text-sizes, "s1");
     }
 
+    .nav-area {
+      @include make-flex($direction: column);
+    }
+
     .icon-area {
       @include make-flex;
       @include add-gap(24px);
