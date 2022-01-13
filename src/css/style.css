@@ -724,7 +724,7 @@ h4 {
   flex-wrap: wrap;
   column-gap: 2.5rem;
   row-gap: 1.9375rem;
-  padding-top: 3.875rem;
+  padding-top: 3.9375rem;
   padding-bottom: 4.5rem;
 }
 .nav-footer-1 .nav-box {
@@ -734,8 +734,6 @@ h4 {
 }
 .nav-footer-1 .nav-box .title {
   margin-bottom: 0.9375rem;
-  font-size: 1.125rem;
-  line-height: 1.5;
 }
 .nav-footer-1 .nav-box .nav-area {
   display: flex;
@@ -774,9 +772,8 @@ h4 {
   }
 }
 .nav-footer-2 .nav-area .nav-item {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.5;
-  line-height: 1;
 }
 
 /* Styles */

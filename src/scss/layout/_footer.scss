@@ -2,14 +2,13 @@
 .nav-footer-1 {
   @include make-flex($wrap: wrap);
   @include add-gap(40px, 31px);
-  @include add-padding($top: 62px, $bottom: 72px);
+  @include add-padding($top: 63px, $bottom: 72px);
 
   .nav-box {
     @include add-flexibility($grow: 1, $basis: 270px);
 
     .title {
       @include add-margin($bottom: 15px);
-      @include typography($text-sizes, "s1");
     }
 
     .nav-area {
@@ -44,8 +43,7 @@
     }
 
     .nav-item {
-      @include typography($text-sizes, "s1");
-      line-height: 1;
+      @include typography($text-sizes, "default");
     }
   }
 }
