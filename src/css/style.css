@@ -734,6 +734,8 @@ h4 {
 }
 .nav-footer-1 .nav-box .title {
   margin-bottom: 0.9375rem;
+  font-size: 1.125rem;
+  line-height: 1.5;
 }
 .nav-footer-1 .nav-box .nav-area {
   display: flex;

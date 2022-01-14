@@ -9,6 +9,7 @@
 
     .title {
       @include add-margin($bottom: 15px);
+      @include typography($text-sizes, "s1");
     }
 
     .nav-area {
