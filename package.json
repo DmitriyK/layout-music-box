@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "",
-  "scripts": {
-    "start": "sass ./src/scss/app.scss ./src/css/style.css"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DmitriyK/layout-designer-project-lvl2.git"
