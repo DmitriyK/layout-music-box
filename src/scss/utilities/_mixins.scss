@@ -35,10 +35,9 @@
   display: $value;
 }
 
-@mixin add-position($position) {
-  position: $position;
+@mixin add-position($position, $value) {
+  #{$position}: convertToFlexUnit($value);
 }
-
 
 @mixin make-box($width: false, $height: false) {
   @if $width { width: convertToFlexUnit($width); }
@@ -165,11 +164,6 @@
 }
 
 /* Background style */
-@mixin bg-color($color) {
-  $value-color: map-get($colors, $color);
-  background: $value-color;
-}
-
 @mixin bg-image($name-img) {
   background-image: url("../assets/images/#{$name-img}.png");
   background-position: center;
@@ -181,19 +175,14 @@
   background: linear-gradient($test, $value-gradient);
 }
 
-@mixin bg-button($color) {
-  $value-bg: map-get($colors, $color);
-  background: $value-bg;
-  @content;
+@mixin generate-color-atoms($list) {
+  @each $key, $value in $list {
+   .text-#{$key} {
+     color: $value;
+   }
+   .bg-#{$key} {
+     background-color: $value;
+   }
+  }
 }
-
-// @mixin generate-atoms($list) {
-//   @each $name, $value in $list {
-//     @if $value != () {
-//       .#{$name}-#{$value} {
-//         #{$name}: convertToFlexUnit($value);
-//       }
-//     } 
-//   }
-// }
 

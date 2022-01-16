@@ -1,14 +1,10 @@
 /* Atoms */
 .absolute {
-  @include add-position(absolute);
-}
-
-.relative {
-  @include add-position(relative);
+  position: absolute;
 }
 
 .top-25 {
-  top: 25px;
+  @include add-position(top, 25px);
 }
 
 .hidden {
@@ -45,22 +41,12 @@
   @include add-padding($bottom: 200px);
 }
 
-.mb-45 {
-  @include add-margin($bottom: 45px);
-}
-
 .mb-48 {
   @include add-margin($bottom: 48px);
 }
 
 .mt-40 {
   @include add-margin($top: 40px);
-}
-
-.mt-25-sm {
-  @include for-phone {
-    @include add-margin($top: 25px);
-  }
 }
 
 .mt-25-sm {
@@ -91,12 +77,12 @@
   @include add-margin($bottom: 100px);
 }
 
-.white {
-  @include text-style("white");
-}
-
 .text-center {
   @include text-align(center)
+}
+
+.capitalize {
+  @include text-style($transform: capitalize);
 }
 
 .uppercase {
@@ -111,27 +97,8 @@
   @include text-style($weight: bold);
 }
 
-.capitalize {
-  @include text-style($transform: capitalize);
-}
+@include generate-color-atoms($colors); // .text-color, .bg-color
 
-
-
-.text-white {
-  color: map-get($colors, "white");
-}
-
-.text-orange {
-  color: map-get($colors, "orange");
-}
-
-.text-dark-gray {
-  color: map-get($colors, "dark-gray")
-}
-
-.bg-black {
-  @include bg-color("black");
-}
 
 .bg-gradient {
   @include bg-gradient(0.75turn, "gradient-1");

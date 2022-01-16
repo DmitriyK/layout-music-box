@@ -21,8 +21,6 @@
   @include add-padding($top: 16px, $bottom: 16px);
   @include make-border($color: "dark-gray");
   @include typography($text-sizes, "small");
-
-  // @include text-style($color: "dark-gray", $transform: uppercase);
 }
 
 .btn-download {
@@ -31,7 +29,7 @@
   @include typography($text-sizes, "small");
 }
 
-.btn-to-mix {
+.btn-music {
   @include make-flex;
   @include add-gap(16px);
   @include make-box($width: 200px);
@@ -43,30 +41,4 @@
   }
   
 }
-
-.btn-to-favorite {
-  @include make-flex;
-  @include add-gap(16px);
-  @include make-box($width: 200px);
-
-  @include typography($text-sizes, "small");
-
-  .svg-icon {
-    @include make-box(20px, 20px);
-  }
-}
-
-/* Style */
-.bg-green {
-  @include bg-button("green");
-}
-
-.bg-purple {
-  @include bg-button("purple");
-}
-
-.bg-dark-red {
-  @include bg-button("dark-red");
-}
-
 

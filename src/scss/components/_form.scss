@@ -19,7 +19,6 @@
 
       @include border-none;
       @include add-border-radius(50px);
-      @include bg-color("dark");
     }
   }
 }
@@ -40,14 +39,13 @@
       @include add-flexibility($grow: 1);
       min-height: convertToFlexUnit(50px);
       @include add-padding($left: 20px);
-  
+      @include make-border($size: 2px, $color: "dark-gray");
+      @include add-border-radius(3px);
+
       &::placeholder {
         @include text-style($color: "white");
       }
 
-      @include make-border($size: 2px, $color: "dark-gray");
-      @include add-border-radius(3px);
-      @include bg-color("transparent");
     }
   }
 }
