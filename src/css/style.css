@@ -38,7 +38,7 @@ input:focus {
 }
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto-Regular", sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -50,16 +50,16 @@ body {
 
 /* Fonts */
 @font-face {
-  font-family: "/src/assets/fonts/";
-  font-weight: "Roboto";
+  font-family: "Roboto-Regular";
+  font-weight: normal;
   font-style: normal;
-  src: url("/src/assets/fonts//src/assets/fonts/.ttf");
+  src: url("/src/assets/fonts/Roboto-Regular.ttf");
 }
 @font-face {
-  font-family: "/src/assets/fonts/";
-  font-weight: "Roboto-Bold";
-  font-style: bold;
-  src: url("/src/assets/fonts//src/assets/fonts/.ttf");
+  font-family: "Roboto-Bold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("/src/assets/fonts/Roboto-Bold.ttf");
 }
 h1,
 h2 {

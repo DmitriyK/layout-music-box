@@ -1,6 +1,6 @@
 /* Fonts */
-@include font-face("/src/assets/fonts/", "Roboto");
-@include font-face("/src/assets/fonts/", "Roboto-Bold", bold);
+@include font-face("Roboto-Regular");
+@include font-face("Roboto-Bold", bold);
 
 h1,
 h2 {
