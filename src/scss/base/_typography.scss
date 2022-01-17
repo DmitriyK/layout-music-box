@@ -1,6 +1,7 @@
 /* Fonts */
-@include font-face("Roboto-Regular");
-@include font-face("Roboto-Bold", bold);
+@include font-face("Roboto", "Roboto-Regular", 400);
+@include font-face("Roboto", "Roboto-Medium", 500);
+@include font-face("Roboto", "Roboto-Bold", 700);
 
 h1,
 h2 {

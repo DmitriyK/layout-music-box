@@ -24,13 +24,11 @@ input:focus {
   @include outline-none;
 }
 
-html {
+body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
-}
 
-body {
   color: $base-color;
   background: $base-background;
 }

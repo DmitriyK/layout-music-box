@@ -37,29 +37,32 @@ input:focus {
   outline: none;
 }
 
-html {
-  font-family: "Roboto-Regular", sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-}
-
-body {
   color: #cacaca;
   background: #08020d;
 }
 
 /* Fonts */
 @font-face {
-  font-family: "Roboto-Regular";
-  font-weight: normal;
+  font-family: "Roboto";
+  font-weight: 400;
   font-style: normal;
-  src: url("/src/assets/fonts/Roboto-Regular.ttf");
+  src: url("../assets/fonts/Roboto-Regular.ttf");
 }
 @font-face {
-  font-family: "Roboto-Bold";
-  font-weight: bold;
+  font-family: "Roboto";
+  font-weight: 500;
   font-style: normal;
-  src: url("/src/assets/fonts/Roboto-Bold.ttf");
+  src: url("../assets/fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../assets/fonts/Roboto-Bold.ttf");
 }
 h1,
 h2 {
@@ -203,6 +206,10 @@ h4 {
 
 .normal {
   font-weight: normal;
+}
+
+.medium {
+  font-weight: medium;
 }
 
 .bold {

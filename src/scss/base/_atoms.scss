@@ -93,6 +93,10 @@
   @include text-style($weight: normal);
 }
 
+.medium {
+  @include text-style($weight: medium);
+}
+
 .bold {
   @include text-style($weight: bold);
 }

@@ -95,12 +95,12 @@
 }
 
 /* Typography */
-@mixin font-face($font-family, $weight: normal, $style: normal) {
+@mixin font-face($font-family, $font-file-name, $weight: normal, $style: normal) {
   @font-face {
       font-family: $font-family;
       font-weight: $weight;
       font-style: $style;
-      src: url("/src/assets/fonts/#{$font-family}.ttf");
+      src: url("../assets/fonts/#{$font-file-name}.ttf");
   }
 }
 
