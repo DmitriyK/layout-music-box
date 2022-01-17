@@ -3,7 +3,7 @@
 
 This repository is created and maintained by the team and the community of Hexlet, an educational project. [Read more about Hexlet (in Russian)](https://ru.hexlet.io/programs/layout-designer/projects/56).
 
-# HTMl/SASS MusicBox
+# HTML/SASS MusicBox
 
 Creation of layout according to OOCSS and Atomic CSS methodologies. In the process of implementation was used the knowledge gained from courses on adaptability and SASS.
 
