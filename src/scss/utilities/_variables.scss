@@ -5,7 +5,6 @@ $base-font-size: 16px;
 $base-line-height: 1.5;
 $base-color: #cacaca;
 $base-background: #08020d;
-
 $rem-base: $base-font-size;
 
 /* Typography */
@@ -24,7 +23,7 @@ $heading-sizes: (
   )
 );
 
-/* Text-size */ 
+/* Text-size */
 $text-sizes: (
   "s7": (64px, 64px),
   "s6": (56px),
@@ -37,25 +36,24 @@ $text-sizes: (
   "default": ($base-font-size),
 );
 
-/* Background */ 
+/* Background */
 $colors: (
-  "white": #FFFFFF,
-  "black": #08020D,
-  "gray": #E0E0E0,
-  "dark-gray": #CACACA,
-  "dark": #3C3B3D,
-  "green": #34C176,
-  "orange": #F89202,
-  "purple": #5328A1,
-  "dark-red": #95390C,
+  "white": #ffffff,
+  "black": #08020d,
+  "gray": #e0e0e0,
+  "dark-gray": #cacaca,
+  "dark": #3c3b3d,
+  "green": #34c176,
+  "orange": #f89202,
+  "purple": #5328a1,
+  "dark-red": #95390c,
   "transparent": transparent,
 );
-
 $gradients: (
-  "gradient-1": (map-get($colors, "dark-red") 14.9%, map-get($colors, "purple" ) 68.95%),
+  "gradient-1": (map-get($colors, "dark-red") 14.9%, map-get($colors, "purple") 68.95%),
 );
 
-/* Breakpoints */ 
+/* Breakpoints */
 $breakpoints: (
   "sm": 576px,
   "md": 768px,

@@ -78,7 +78,7 @@
 }
 
 .text-center {
-  @include text-align(center)
+  @include text-align(center);
 }
 
 .capitalize {
@@ -102,7 +102,6 @@
 }
 
 @include generate-color-atoms($colors); // .text-color, .bg-color
-
 
 .bg-gradient {
   @include bg-gradient(0.75turn, "gradient-1");

@@ -9,7 +9,7 @@
 
   .similar-img {
     @include make-box(250px, 250px);
-    
+
     @include for-phone {
       @include make-box(137px, 137px);
     }

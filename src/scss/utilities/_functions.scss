@@ -1,19 +1,19 @@
 @use "sass:math";
 
-@function pxToRem($size) {
+@function px-to-rem($size) {
   @return math.div($size, $rem-base) * 1rem;
 }
 
-@function getUnit($value) {
+@function get-unit($value) {
   @return str-slice($value * 0 + "", 2, -1);
 }
 
-@function isPxUnit($value) {
-  @if getUnit($value) == "px" { @return true; }
+@function is-px-unit($value) {
+  @if get-unit($value) == "px" { @return true; }
   @else { @return false; }
 }
 
-@function convertToFlexUnit($value) {
-  @if type-of($value) == number and isPxUnit($value) { @return pxToRem($value); }
+@function convert-to-flex-unit($value) {
+  @if type-of($value) == number and is-px-unit($value) { @return px-to-rem($value); }
   @else { @return $value; }
 }

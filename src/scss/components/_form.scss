@@ -28,16 +28,15 @@
   @include make-flex($wrap: wrap);
   @include add-gap(24px, 24px);
   @include add-margin(0, auto, 0, auto);
+  max-width: convert-to-flex-unit(570px);
 
-  max-width: convertToFlexUnit(570px);
-  
   .form-group {
     @include make-flex;
     @include add-flexibility($grow: 1, $basis: 270px);
 
     input {
       @include add-flexibility($grow: 1);
-      min-height: convertToFlexUnit(50px);
+      min-height: convert-to-flex-unit(50px);
       @include add-padding($left: 20px);
       @include make-border($size: 2px, $color: "dark-gray");
       @include add-border-radius(3px);

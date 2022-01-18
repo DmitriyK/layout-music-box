@@ -1,3 +1,4 @@
+/* Pricing Card */
 .pricing-item {
   @include add-flexibility($grow: 1, $basis: 30%);
   @include add-padding($left: 24px, $right: 24px);
@@ -10,7 +11,7 @@
       @include add-margin($top: 16px);
     }
   }
-  
+
   .item-value {
     @include make-flex;
     @include add-gap($column-gap: 16px);
@@ -26,7 +27,7 @@
       @include typography($text-sizes, "s3");
     }
   }
-  
+
   .item-description {
     @include add-margin($top: 64px, $bottom: 64px);
     @include typography($text-sizes, "small");
@@ -37,9 +38,11 @@
 .bg-free {
   @include bg-image("subscribe_1");
 }
+
 .bg-standart {
   @include bg-image("subscribe_2");
 }
+
 .bg-premium {
   @include bg-image("subscribe_3");
 }
