@@ -12,7 +12,8 @@
       @include typography($text-sizes, "s1");
     }
 
-    .nav-area {
+    .nav-area,
+    .contact-area {
       @include make-flex($direction: column);
     }
 
@@ -21,9 +22,8 @@
       @include add-gap(24px);
       @include add-align-elements($align-items: baseline);
 
-      .icon-item {
-        @include make-flex;
-        @include add-align-elements($align-items: center);
+      .icon {
+        @include vertical-align(middle);
       }
     }
   }
