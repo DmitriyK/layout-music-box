@@ -17,6 +17,10 @@
       @include make-flex($direction: column);
     }
 
+    .contact-area .contact-item[href^="#"] {
+      @include make-flex(inline-flex);
+    }
+
     .icon-area {
       @include make-flex;
       @include add-gap(24px);
@@ -50,7 +54,8 @@
 }
 
 /* Styles */
-.footer .nav-area .nav-item {
+.nav-area .nav-item,
+.contact-area .contact-item {
   @include text-style($color: "gray");
 }
 
