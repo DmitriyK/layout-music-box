@@ -132,6 +132,10 @@
   text-align: $align;
 }
 
+@mixin vertical-align($align: baseline) {
+  vertical-align: $align;
+}
+
 /* Border style */
 @mixin make-border(
   $position: all,
