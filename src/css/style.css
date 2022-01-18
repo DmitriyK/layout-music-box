@@ -770,7 +770,7 @@ h4 {
   flex-direction: column;
 }
 .nav-footer-1 .nav-box .contact-area .contact-item[href^="#"] {
-  display: inline-flex;
+  width: max-content;
 }
 .nav-footer-1 .nav-box .icon-area {
   display: flex;
