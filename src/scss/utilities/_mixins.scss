@@ -40,34 +40,25 @@
 }
 
 @mixin make-box($width: false, $height: false) {
-  @if $width {
-    width: convert-to-flex-unit($width);
-  }
-  @if $height {
-    height: convert-to-flex-unit($height);
-  }
+  @if $width { width: convert-to-flex-unit($width); }
+
+  @if $height { height: convert-to-flex-unit($height); }
 }
 
 @mixin make-flex($display: flex, $direction: false, $wrap: false) {
   display: $display;
-  @if $direction {
-    flex-direction: $direction;
-  }
-  @if $wrap {
-    flex-wrap: $wrap;
-  }
+
+  @if $direction { flex-direction: $direction; }
+
+  @if $wrap { flex-wrap: $wrap; }
 }
 
 @mixin add-align-elements($justify-content: false, $align-content: false, $align-items: false) {
-  @if $justify-content {
-    justify-content: $justify-content;
-  }
-  @if $align-content {
-    align-content: $align-content;
-  }
-  @if $align-items {
-    align-items: $align-items;
-  }
+  @if $justify-content { justify-content: $justify-content; }
+
+  @if $align-content { align-content: $align-content; }
+
+  @if $align-items { align-items: $align-items; }
 }
 
 @mixin add-flexibility($grow: 0, $shrink: 1, $basis: auto) {
@@ -75,12 +66,9 @@
 }
 
 @mixin add-gap($column-gap: false, $row-gap: false) {
-  @if $column-gap {
-    column-gap: convert-to-flex-unit($column-gap);
-  }
-  @if $row-gap {
-    row-gap: convert-to-flex-unit($row-gap);
-  }
+  @if $column-gap { column-gap: convert-to-flex-unit($column-gap); }
+
+  @if $row-gap { row-gap: convert-to-flex-unit($row-gap); }
 }
 
 @mixin add-order($order) {
@@ -98,25 +86,31 @@
 
 @mixin add-padding($top: false, $right: false, $bottom: false, $left: false) {
 	@if $top { padding-top: convert-to-flex-unit($top); }
+
   @if $right { padding-right: convert-to-flex-unit($right); }
+
   @if $bottom { padding-bottom: convert-to-flex-unit($bottom); }
+
   @if $left { padding-left: convert-to-flex-unit($left); }
 }
 
 @mixin add-margin($top: false, $right: false, $bottom: false, $left: false) {
 	@if $top { margin-top: convert-to-flex-unit($top); }
+
   @if $right { margin-right: convert-to-flex-unit($right); }
+
   @if $bottom { margin-bottom: convert-to-flex-unit($bottom); }
+
   @if $left { margin-left: convert-to-flex-unit($left); }
 }
 
 /* Typography */
 @mixin font-face($font-family, $font-file-name, $weight: normal, $style: normal) {
   @font-face {
-      font-family: $font-family;
-      font-weight: $weight;
-      font-style: $style;
-      src: url("../assets/fonts/#{$font-file-name}.ttf");
+    font-weight: $weight;
+    font-family: $font-family;
+    font-style: $style;
+    src: url("../assets/fonts/#{$font-file-name}.ttf");
   }
 }
 
@@ -128,9 +122,11 @@
 @mixin typography($list, $size, $device: false) {
   @if $device {
     $value-size: map-get($list, $size);
+
     @include font-size($value-size...);
   } @else {
     $value-size: map-get($list, $device, $size);
+
     @include font-size($value-size...);
   }
 }
@@ -140,12 +136,10 @@
     $value-color: map-get($colors, $color);
     color: $value-color;
   }
-  @if $weight {
-    font-weight: $weight;
-  }
-  @if $transform {
-    text-transform: $transform;
-  }
+
+  @if $weight { font-weight: $weight; }
+
+  @if $transform { text-transform: $transform; }
 }
 
 @mixin text-align($align: start) {
