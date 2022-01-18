@@ -64,6 +64,7 @@ body {
   font-style: normal;
   src: url("../assets/fonts/Roboto-Bold.ttf");
 }
+/* Typography general */
 h1,
 h2 {
   text-transform: uppercase;
@@ -467,7 +468,8 @@ h4 {
   color: #FFFFFF;
 }
 
-.form-to-album {
+/* Catalog Form */
+.form-to-album .form-group {
   display: flex;
   flex-wrap: wrap;
   column-gap: 1.5rem;
@@ -762,7 +764,8 @@ h4 {
   font-size: 1.125rem;
   line-height: 1.5;
 }
-.nav-footer-1 .nav-box .nav-area {
+.nav-footer-1 .nav-box .nav-area,
+.nav-footer-1 .nav-box .contact-area {
   display: flex;
   flex-direction: column;
 }
@@ -771,9 +774,8 @@ h4 {
   column-gap: 1.5rem;
   align-items: baseline;
 }
-.nav-footer-1 .nav-box .icon-area .icon-item {
-  display: flex;
-  align-items: center;
+.nav-footer-1 .nav-box .icon-area .icon {
+  vertical-align: middle;
 }
 
 .nav-footer-2 {
