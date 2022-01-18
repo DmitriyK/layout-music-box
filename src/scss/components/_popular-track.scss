@@ -7,7 +7,7 @@
   .track-img {
     @include make-box(55px, 55px);
   }
-  
+
   .track-info {
     @include make-flex;
     @include add-flexibility($grow: 1);

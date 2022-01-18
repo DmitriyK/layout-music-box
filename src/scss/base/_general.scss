@@ -21,14 +21,15 @@ a {
 
 input:focus {
   color: $base-color;
+
   @include outline-none;
 }
 
 body {
-  font-family: $base-font-family;
   font-size: $base-font-size;
-  line-height: $base-line-height;
-
+  font-family: $base-font-family;
   color: $base-color;
+  line-height: $base-line-height;
+  
   background: $base-background;
 }

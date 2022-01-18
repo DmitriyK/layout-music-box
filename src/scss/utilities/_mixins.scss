@@ -35,38 +35,52 @@
   display: $value;
 }
 
-
-
 @mixin add-position($position, $value) {
   #{$position}: convert-to-flex-unit($value);
 }
 
 @mixin make-box($width: false, $height: false) {
-  @if $width { width: convert-to-flex-unit($width); }
-  @if $height { height: convert-to-flex-unit($height); }
+  @if $width {
+    width: convert-to-flex-unit($width);
+  }
+  @if $height {
+    height: convert-to-flex-unit($height);
+  }
 }
 
 @mixin make-flex($display: flex, $direction: false, $wrap: false) {
   display: $display;
-  @if $direction { flex-direction: $direction; }
-  @if $wrap { flex-wrap: $wrap; }
+  @if $direction {
+    flex-direction: $direction;
+  }
+  @if $wrap {
+    flex-wrap: $wrap;
+  }
 }
 
 @mixin add-align-elements($justify-content: false, $align-content: false, $align-items: false) {
-  @if $justify-content { justify-content: $justify-content; }
-  @if $align-content { align-content: $align-content; }
-  @if $align-items { align-items: $align-items; }
+  @if $justify-content {
+    justify-content: $justify-content;
+  }
+  @if $align-content {
+    align-content: $align-content;
+  }
+  @if $align-items {
+    align-items: $align-items;
+  }
 }
 
 @mixin add-flexibility($grow: 0, $shrink: 1, $basis: auto) {
-  flex-grow: $grow;
-  flex-shrink: $shrink;
-  flex-basis: convert-to-flex-unit($basis);
+  flex: $grow $shrink convert-to-flex-unit($basis);
 }
 
 @mixin add-gap($column-gap: false, $row-gap: false) {
-  @if $column-gap { column-gap: convert-to-flex-unit($column-gap); }
-  @if $row-gap { row-gap: convert-to-flex-unit($row-gap); }
+  @if $column-gap {
+    column-gap: convert-to-flex-unit($column-gap);
+  }
+  @if $row-gap {
+    row-gap: convert-to-flex-unit($row-gap);
+  }
 }
 
 @mixin add-order($order) {
@@ -109,10 +123,10 @@
 @mixin font-size($size: $base-font-size, $height: $size * $base-line-height) {
   font-size: convert-to-flex-unit($size);
   line-height: math.div($height, $size);
-} 
+}
 
-@mixin typography($list, $size, $device: null) {
-  @if $device == null {
+@mixin typography($list, $size, $device: false) {
+  @if $device {
     $value-size: map-get($list, $size);
     @include font-size($value-size...);
   } @else {
@@ -126,8 +140,12 @@
     $value-color: map-get($colors, $color);
     color: $value-color;
   }
-  @if $weight { font-weight: $weight; }
-  @if $transform { text-transform: $transform; }
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $transform {
+    text-transform: $transform;
+  }
 }
 
 @mixin text-align($align: start) {
@@ -145,6 +163,7 @@
   $pattern: solid,
   $color: "white") {
   $value-color: map-get($colors, $color);
+
   @if $position == all {
     border: convert-to-flex-unit($size) $pattern $value-color;
   } @else {
@@ -183,12 +202,11 @@
 
 @mixin generate-color-atoms($list) {
   @each $key, $value in $list {
-   .text-#{$key} {
-     color: $value;
-   }
-   .bg-#{$key} {
-     background-color: $value;
-   }
+    .text-#{$key} {
+      color: $value;
+    }
+    .bg-#{$key} {
+      background-color: $value;
+    }
   }
 }
-

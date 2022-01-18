@@ -1,8 +1,7 @@
-/* Template */ 
+/* Template */
 .btn {
   @include make-block(inline-block);
   @include add-padding(20px, 30px, 20px, 30px);
-
   @include border-none;
   @include add-border-radius(5px);
 }
@@ -33,12 +32,9 @@
   @include make-flex;
   @include add-gap(16px);
   @include make-box($width: 200px);
-
   @include typography($text-sizes, "small");
 
   .svg-icon {
     @include make-box(20px, 20px);
   }
-  
 }
-

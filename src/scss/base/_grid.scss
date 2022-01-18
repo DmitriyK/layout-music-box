@@ -1,5 +1,6 @@
 .container-content {
   max-width: $base-max-width-content;
+  
   @include add-margin(0, auto, 0, auto);
   @include add-padding($right: 20px, $left: 20px);
 }

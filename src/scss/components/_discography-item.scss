@@ -1,3 +1,4 @@
+/* Discography item */
 .discography-item {
   @include make-flex($direction: column);
   @include add-gap($row-gap: 18px);

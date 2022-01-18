@@ -1,4 +1,4 @@
-/* Header Form */ 
+/* Header Form */
 .form-search {
   @include make-flex;
   @include add-margin($left: auto);
@@ -16,7 +16,6 @@
     input {
       @include add-flexibility($grow: 1);
       @include add-padding(5px, 10px, 5px, 10px);
-
       @include border-none;
       @include add-border-radius(50px);
     }
@@ -25,18 +24,20 @@
 
 /* Main Form */ 
 .form-subscribe {
+  max-width: convert-to-flex-unit(570px);
+
   @include make-flex($wrap: wrap);
   @include add-gap(24px, 24px);
   @include add-margin(0, auto, 0, auto);
-  max-width: convert-to-flex-unit(570px);
 
   .form-group {
     @include make-flex;
     @include add-flexibility($grow: 1, $basis: 270px);
 
     input {
-      @include add-flexibility($grow: 1);
       min-height: convert-to-flex-unit(50px);
+
+      @include add-flexibility($grow: 1);
       @include add-padding($left: 20px);
       @include make-border($size: 2px, $color: "dark-gray");
       @include add-border-radius(3px);
@@ -44,7 +45,6 @@
       &::placeholder {
         @include text-style($color: "white");
       }
-
     }
   }
 }

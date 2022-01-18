@@ -9,11 +9,17 @@
 }
 
 @function is-px-unit($value) {
-  @if get-unit($value) == "px" { @return true; }
-  @else { @return false; }
+  @if get-unit($value) == "px" {
+    @return true;
+  } @else {
+    @return false;
+  }
 }
 
 @function convert-to-flex-unit($value) {
-  @if type-of($value) == number and is-px-unit($value) { @return px-to-rem($value); }
-  @else { @return $value; }
+  @if type-of($value) == number and is-px-unit($value) {
+    @return px-to-rem($value);
+  } @else {
+    @return $value; 
+  }
 }
