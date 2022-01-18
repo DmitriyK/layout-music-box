@@ -20,6 +20,6 @@
   @if type-of($value) == number and is-px-unit($value) {
     @return px-to-rem($value);
   } @else {
-    @return $value; 
+    @return $value;
   }
 }
