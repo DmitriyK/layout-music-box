@@ -3,6 +3,7 @@
 @include font-face("Roboto", "Roboto-Medium", 500);
 @include font-face("Roboto", "Roboto-Bold", 700);
 
+/* Typography general */
 h1,
 h2 {
   @include text-style($transform: uppercase);
