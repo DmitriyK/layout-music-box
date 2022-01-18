@@ -18,7 +18,7 @@
     }
 
     .contact-area .contact-item[href^="#"] {
-      @include make-flex(inline-flex);
+      @include make-box($width: max-content);
     }
 
     .icon-area {
