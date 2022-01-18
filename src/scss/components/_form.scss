@@ -50,7 +50,8 @@
   }
 }
 
-.form-to-album {
+/* Catalog Form */
+.form-to-album .form-group {
   @include make-flex($wrap: wrap);
   @include add-gap(24px, 24px);
 }
