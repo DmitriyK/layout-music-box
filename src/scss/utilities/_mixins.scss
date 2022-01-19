@@ -120,7 +120,7 @@
 }
 
 @mixin typography($list, $size, $device: false) {
-  @if $device {
+  @if $device == false {
     $value-size: map-get($list, $size);
 
     @include font-size($value-size...);

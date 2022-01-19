@@ -15,10 +15,11 @@
     .nav-area,
     .contact-area {
       @include make-flex($direction: column);
-    }
 
-    .contact-area .contact-item[href^="#"] {
-      @include make-box($width: max-content);
+      .nav-item[href^="#"],
+      .contact-item[href^="#"] {
+        @include make-box($width: max-content);
+      }
     }
 
     .icon-area {
