@@ -1,4 +1,20 @@
 /* Navigaton footer */
+.nav-footer-2 {
+  @include make-flex;
+  @include add-padding($top: 40px, $bottom: 48px);
+  @include add-flexibility($grow: 1);
+
+  .nav-area {
+    @include make-flex;
+    @include add-flexibility($grow: 1);
+    @include add-gap(16px, 16px);
+
+    @include for-phone {
+      @include make-flex($direction: column);
+    }
+  }
+}
+
 .nav-footer-1 {
   @include make-flex($wrap: wrap);
   @include add-gap(40px, 31px);
@@ -30,26 +46,6 @@
       .icon {
         @include vertical-align(middle);
       }
-    }
-  }
-}
-
-.nav-footer-2 {
-  @include make-flex;
-  @include add-padding($top: 40px, $bottom: 48px);
-  @include add-flexibility($grow: 1);
-
-  .nav-area {
-    @include make-flex;
-    @include add-flexibility($grow: 1);
-    @include add-gap(16px, 16px);
-
-    @include for-phone {
-      @include make-flex($direction: column);
-    }
-
-    .nav-item {
-      @include typography($text-sizes, "default");
     }
   }
 }
